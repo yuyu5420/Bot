@@ -365,6 +365,13 @@ def send_message(recipient_id, message_text):
                             "payload":"不是我要的答案"
                         }
                         ]
+                     "buttons":[
+                        {
+                            "type":"postback",
+                            "title":"不是我要的答案",
+                            "payload":"不是我要的答案"
+                        }
+                        ]
                 }
             }
         }
