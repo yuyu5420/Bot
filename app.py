@@ -161,7 +161,7 @@ def handle_message(message_text, sender_id):
         return '請參考宿網管理系統FAQ http://dorm.cc.ncku.edu.tw/ '
 
     if u'資安通報'.encode("utf8") in message_text :
-        return '您好🙂  需要填寫資安通報，可以先從 https://goo.gl/YzegaO 這裡下載通報檔案，填寫完後直接回傳至security@mail.ncku.edu.tw 這個信箱，或是繳交紙本到計網中心一樓🙂'
+        return '您好🙂  需要填寫資安通報，可以先從 http://goo.gl/tTUceq 這裡下載通報檔案，填寫完後直接回傳至security@mail.ncku.edu.tw 這個信箱，或是繳交紙本到計網中心一樓🙂'
 
     if len(ip) > 0 :
         # start = message_text.find("ip:")
