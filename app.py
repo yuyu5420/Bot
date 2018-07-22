@@ -92,7 +92,8 @@ def webhook():
 
                             if not sender_id in user_dict : # not in time interval
                                 #暫時拿掉限制
-                                #if reply == '抱歉> < 我還無法處理這個問題，請您等待專人為您回答🙂 ' : user_dict[sender_id] = time.time() #使用者待專人回答, chatbot對該使用者暫停
+                                if reply == '抱歉> < 我還無法處理這個問題，請您等待專人為您回答🙂 ' : 
+                                    user_dict[sender_id] = time.time() #使用者待專人回答, chatbot對該使用者暫停
                                 if type(reply) == str :
                                     send_message( sender_id, reply )
                                 else : #template
