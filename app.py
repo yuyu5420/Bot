@@ -202,7 +202,7 @@ def handle_message(message_text, sender_id):
     #授權軟體
     if u'啟動'.encode("utf8") in message_text or u'啟用'.encode("utf8") in message_text or u'認證'.encode("utf8") in message_text :
         if u'如何'.encode("utf8") in message_text or u'怎麼'.encode("utf8") in message_text or u'想'.encode("utf8") in message_text or u'要'.encode("utf8") in message_text :
-            return '您好🙂  windows或office需至校園授權軟體網頁下載啟用檔，若您在學校以外的網路,啟用授權軟體時必須先啟動vpn,才能進行產品認證 http://cc.ncku.edu.tw/p/412-1002-7637.php?Lang=zh-tw \n\n**若需要vpn連線教學請輸入「vpn教學」，謝謝:)'
+            return '您好🙂  windows或office需至校園授權軟體網頁下載啟用檔，若您在學校以外的網路,啟用授權軟體時必須先啟動vpn,才能進行產品認證 http://cc.ncku.edu.tw/p/412-1002-7637.php?Lang=zh-tw \n\n**若需要vpn連線教學請輸入「vpn教學」\n**注意: windows 跟Office 校園授權僅提供"教職員" 不包含"學生"，請學生採購電腦時購買有OEM授權的WINDOWS電腦。'
         if u'無法'.encode("utf8") in message_text or u'失敗'.encode("utf8") in message_text or u'不'.encode("utf8") in message_text :
             return '您好🙂  若無法啟用，請確認是否已連線校內網路：google 「IP 查詢」→進第一個連結。確認IP為成大IP(140.116.XXX.XXX)。\n若已連線校內網路，請問您的錯誤代碼error code為何?(小黑框裡倒數幾行，類似0xC...，若非一般常見錯誤代碼請等待專人協助或於中心二樓服務台服務時間內攜帶筆電前往詢問)。\n若未連線至校內網路，請使用vpn服務連線至校內網路再作啟用。http://cc.ncku.edu.tw/p/412-1002-7637.php?Lang=zh-tw\n\n**若需要vpn連線教學請輸入「vpn教學」，謝謝:)'
     if '0x80070005' in message_text :
